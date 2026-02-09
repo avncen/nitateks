@@ -56,13 +56,12 @@ const Index = () => {
             className="max-w-2xl"
           >
             <h1 className="font-serif text-5xl md:text-6xl lg:text-7xl font-bold text-primary-foreground leading-tight mb-6">
-              Elevating Textile
+              Reliable Garment Manufacturing
               <br />
-              <span className="text-gold">Excellence</span>
+              <span className="text-gold">Partner in Turkey</span>
             </h1>
             <p className="text-primary-foreground/80 text-lg md:text-xl leading-relaxed mb-8 max-w-lg">
-              Expert consultancy in production, design, and global markets.
-              We help textile businesses thrive.
+              High-quality knit and woven womenswear production with a strong focus on sustainability, quality and on-time delivery.
             </p>
             <div className="flex flex-wrap gap-4">
               <Link
