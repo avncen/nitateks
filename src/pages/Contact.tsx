@@ -72,7 +72,7 @@ const Contact = () => {
                 {
                   icon: Mail,
                   label: "Email",
-                  value: "info@nitatextile.com",
+                  value: "zeynep@nitateks.com",
                 },
                 {
                   icon: Phone,
