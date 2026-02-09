@@ -77,7 +77,7 @@ const Contact = () => {
                 {
                   icon: Phone,
                   label: "Phone",
-                  value: "+90 (232) 000 00 00",
+                  value: "+90 533 216 55 88",
                 },
               ].map((item, i) => (
                 <motion.div
