@@ -47,6 +47,18 @@ const services = [
       "Buyer-supplier matchmaking",
     ],
   },
+  {
+    icon: Zap,
+    title: "Fast Collection & Sampling Service",
+    description:
+      "We deliver rapid and reliable collection development and sampling solutions, helping brands accelerate their time-to-market with precision and quality.",
+    features: [
+      "Quick turnaround sample production",
+      "Full collection development support",
+      "Fabric sourcing & proto sampling",
+      "Fit and quality review before bulk",
+    ],
+  },
 ];
 
 const fadeUp = {
