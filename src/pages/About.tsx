@@ -71,9 +71,30 @@ const About = () => {
             <motion.p
               variants={fadeUp}
               custom={3}
-              className="text-muted-foreground leading-relaxed"
+              className="text-muted-foreground leading-relaxed mb-4"
             >
               Our mission is to build long-term partnerships through reliable production and strong communication.
+            </motion.p>
+            <motion.p
+              variants={fadeUp}
+              custom={4}
+              className="text-muted-foreground leading-relaxed mb-4"
+            >
+              Nıta Tekstil Danışmanlık was founded with a singular vision: to bridge
+              the gap between exceptional textile craftsmanship and the demands of
+              modern global markets. Based in İzmir, Turkey — the heart of the
+              country's textile industry — we bring unmatched local knowledge with
+              an international perspective.
+            </motion.p>
+            <motion.p
+              variants={fadeUp}
+              custom={5}
+              className="text-muted-foreground leading-relaxed"
+            >
+              Our team of industry veterans works closely with brands,
+              manufacturers, and retailers to optimize production, enhance
+              quality, and unlock new markets. We are committed to sustainable
+              growth and long-term partnerships.
             </motion.p>
           </motion.div>
 
