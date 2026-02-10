@@ -52,28 +52,28 @@ const About = () => {
               custom={0}
               className="font-serif text-3xl font-bold text-navy mb-6"
             >
-              A Decade of Textile Expertise
+              14+ Years of Garment Manufacturing Expertise
             </motion.h2>
             <motion.p
               variants={fadeUp}
               custom={1}
               className="text-muted-foreground leading-relaxed mb-4"
             >
-              Nıta Tekstil Danışmanlık was founded with a singular vision: to bridge
-              the gap between exceptional textile craftsmanship and the demands of
-              modern global markets. Based in İzmir, Turkey — the heart of the
-              country's textile industry — we bring unmatched local knowledge with
-              an international perspective.
+              Nita Tekstil is a garment manufacturer based in İzmir, Turkey, specialized in knit and woven womenswear production.
             </motion.p>
             <motion.p
               variants={fadeUp}
               custom={2}
+              className="text-muted-foreground leading-relaxed mb-4"
+            >
+              With more than 14 years of experience, we support brands from product development to final delivery, focusing on quality, transparency and sustainable production.
+            </motion.p>
+            <motion.p
+              variants={fadeUp}
+              custom={3}
               className="text-muted-foreground leading-relaxed"
             >
-              Our team of industry veterans works closely with brands,
-              manufacturers, and retailers to optimize production, enhance
-              quality, and unlock new markets. We are committed to sustainable
-              growth and long-term partnerships.
+              Our mission is to build long-term partnerships through reliable production and strong communication.
             </motion.p>
           </motion.div>
 
