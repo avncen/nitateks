@@ -7,6 +7,7 @@ import {
   Globe,
   ArrowRight,
   CheckCircle2,
+  Zap,
 } from "lucide-react";
 
 const services = [
