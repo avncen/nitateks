@@ -4,9 +4,9 @@ import { Award, Users, Clock, TrendingUp } from "lucide-react";
 
 const stats = [
   { icon: Clock, value: "14+", label: "Years Experience" },
-  { icon: Users, value: "200+", label: "Clients Served" },
-  { icon: Award, value: "50+", label: "Brands Partnered" },
-  { icon: TrendingUp, value: "30+", label: "Countries Reached" },
+  { icon: Users, value: "35+", label: "Clients Served" },
+  { icon: Award, value: "22+", label: "Brands Partnered" },
+  { icon: TrendingUp, value: "14+", label: "Countries Reached" },
 ];
 
 const fadeUp = {
