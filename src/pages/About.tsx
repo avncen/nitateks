@@ -91,7 +91,7 @@ const About = () => {
               custom={5}
               className="text-muted-foreground leading-relaxed"
             >
-              Our team of industry veterans works closely with brands,
+              Our team works closely with brands,
               manufacturers, and retailers to optimize production, enhance
               quality, and unlock new markets. We are committed to sustainable
               growth and long-term partnerships.
