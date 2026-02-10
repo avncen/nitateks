@@ -9,7 +9,7 @@ const Footer = () => {
           {/* Brand */}
           <div>
             <h3 className="font-serif text-2xl font-bold mb-4">
-              NITA<span className="text-gold">.</span>
+              Nıta <span className="text-gold">Textile</span>
             </h3>
             <p className="text-primary-foreground/70 text-sm leading-relaxed">
               Nıta Tekstil Danışmanlık Ltd. Şti. — Your trusted partner in
