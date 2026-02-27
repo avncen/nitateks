@@ -10,7 +10,7 @@ const Footer = () => {
           <div>
             <Link to="/" className="flex items-center gap-3 mb-4">
               <div className="w-9 h-9 border-2 border-gold rounded-full flex items-center justify-center">
-                <span className="font-serif text-sm font-semibold text-gold tracking-tight leading-none">N</span>
+                <span className="font-serif text-sm font-semibold text-gold tracking-tight leading-none">NT</span>
               </div>
               <div className="flex items-baseline gap-1.5">
                 <span className="font-serif text-2xl font-semibold text-primary-foreground tracking-wide">Nıta</span>
