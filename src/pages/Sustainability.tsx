@@ -10,6 +10,11 @@ import {
   ArrowRight,
   CheckCircle2,
 } from "lucide-react";
+import sustainEco from "@/assets/sustain-eco.jpg";
+import sustainCircular from "@/assets/sustain-circular.jpg";
+import sustainWater from "@/assets/sustain-water.jpg";
+import sustainEthical from "@/assets/sustain-ethical.jpg";
+import sustainHigg from "@/assets/sustain-higg.jpg";
 
 const pillars = [
   {
