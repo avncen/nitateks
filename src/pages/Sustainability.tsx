@@ -10,10 +10,16 @@ import {
   ArrowRight,
   CheckCircle2,
 } from "lucide-react";
+import sustainEco from "@/assets/sustain-eco.jpg";
+import sustainCircular from "@/assets/sustain-circular.jpg";
+import sustainWater from "@/assets/sustain-water.jpg";
+import sustainEthical from "@/assets/sustain-ethical.jpg";
+import sustainHigg from "@/assets/sustain-higg.jpg";
 
 const pillars = [
   {
     icon: Leaf,
+    image: sustainEco,
     title: "Eco-Friendly Materials",
     description:
       "We prioritize organic, recycled, and sustainably sourced textiles to minimize environmental impact across the supply chain.",
@@ -26,6 +32,7 @@ const pillars = [
   },
   {
     icon: Recycle,
+    image: sustainCircular,
     title: "Circular Production",
     description:
       "Our approach to production focuses on waste reduction, recycling, and creating closed-loop systems for textile manufacturing.",
@@ -38,6 +45,7 @@ const pillars = [
   },
   {
     icon: Droplets,
+    image: sustainWater,
     title: "Water & Energy Conservation",
     description:
       "We work with factories that implement advanced water treatment and energy-efficient processes to reduce resource consumption.",
@@ -50,6 +58,7 @@ const pillars = [
   },
   {
     icon: Sun,
+    image: sustainEthical,
     title: "Ethical & Transparent Supply Chain",
     description:
       "Transparency and fair labor practices are at the core of our sustainability commitment, ensuring dignity across every step.",
@@ -62,6 +71,7 @@ const pillars = [
   },
   {
     icon: Award,
+    image: sustainHigg,
     title: "Higg FEM",
     description:
       "We support and guide our partner factories in completing the Higg Facility Environmental Module (FEM), ensuring transparent measurement and continuous improvement of environmental performance.",
@@ -145,11 +155,11 @@ const Sustainability = () => {
               </div>
 
               <div
-                className={`bg-cream rounded-2xl h-64 lg:h-80 flex items-center justify-center ${
+                className={`rounded-2xl overflow-hidden h-64 lg:h-80 ${
                   i % 2 !== 0 ? "lg:order-1" : ""
                 }`}
               >
-                <pillar.icon className="text-navy/10" size={120} />
+                <img src={pillar.image} alt={pillar.title} className="w-full h-full object-cover" />
               </div>
             </motion.div>
           ))}
