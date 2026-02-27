@@ -9,6 +9,10 @@ import {
   CheckCircle2,
   Zap,
 } from "lucide-react";
+import serviceProduction from "@/assets/service-production.jpg";
+import serviceDesign from "@/assets/service-design.jpg";
+import serviceExport from "@/assets/service-export.jpg";
+import serviceSampling from "@/assets/service-sampling.jpg";
 
 const services = [
   {
@@ -16,6 +20,7 @@ const services = [
     title: "Production & Quality Management",
     description:
       "We oversee every stage of textile production to guarantee quality, efficiency, and compliance with international standards.",
+    image: serviceProduction,
     features: [
       "Factory audits & supplier evaluation",
       "Quality control inspections",
@@ -28,6 +33,7 @@ const services = [
     title: "Fashion & Design Consultancy",
     description:
       "From trend analysis to collection planning, we help brands create compelling textile products that resonate with their target market.",
+    image: serviceDesign,
     features: [
       "Seasonal trend forecasting",
       "Fabric & material selection",
@@ -40,6 +46,7 @@ const services = [
     title: "Export & Marketing",
     description:
       "We connect Turkish textile excellence with global opportunities through strategic market positioning and trade facilitation.",
+    image: serviceExport,
     features: [
       "International market research",
       "Trade fair representation",
@@ -52,6 +59,7 @@ const services = [
     title: "Fast Collection & Sampling Service",
     description:
       "We deliver rapid and reliable collection development and sampling solutions, helping brands accelerate their time-to-market with precision and quality.",
+    image: serviceSampling,
     features: [
       "Quick turnaround sample production",
       "Full collection development support",
@@ -126,8 +134,8 @@ const Services = () => {
                 </ul>
               </div>
 
-              <div className={`bg-cream rounded-2xl h-64 lg:h-80 flex items-center justify-center ${i % 2 !== 0 ? "lg:order-1" : ""}`}>
-                <service.icon className="text-navy/10" size={120} />
+              <div className={`rounded-2xl overflow-hidden h-64 lg:h-80 ${i % 2 !== 0 ? "lg:order-1" : ""}`}>
+                <img src={service.image} alt={service.title} className="w-full h-full object-cover" />
               </div>
             </motion.div>
           ))}
