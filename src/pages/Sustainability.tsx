@@ -19,6 +19,7 @@ import sustainHigg from "@/assets/sustain-higg.jpg";
 const pillars = [
   {
     icon: Leaf,
+    image: sustainEco,
     title: "Eco-Friendly Materials",
     description:
       "We prioritize organic, recycled, and sustainably sourced textiles to minimize environmental impact across the supply chain.",
