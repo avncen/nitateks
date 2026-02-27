@@ -45,6 +45,7 @@ const pillars = [
   },
   {
     icon: Droplets,
+    image: sustainWater,
     title: "Water & Energy Conservation",
     description:
       "We work with factories that implement advanced water treatment and energy-efficient processes to reduce resource consumption.",
