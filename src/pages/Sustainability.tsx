@@ -155,11 +155,11 @@ const Sustainability = () => {
               </div>
 
               <div
-                className={`bg-cream rounded-2xl h-64 lg:h-80 flex items-center justify-center ${
+                className={`rounded-2xl overflow-hidden h-64 lg:h-80 ${
                   i % 2 !== 0 ? "lg:order-1" : ""
                 }`}
               >
-                <pillar.icon className="text-navy/10" size={120} />
+                <img src={pillar.image} alt={pillar.title} className="w-full h-full object-cover" />
               </div>
             </motion.div>
           ))}
