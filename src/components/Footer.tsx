@@ -8,9 +8,16 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
           {/* Brand */}
           <div>
-            <h3 className="font-serif text-2xl font-bold mb-4">
-              Nıta <span className="text-gold">Textile</span>
-            </h3>
+            <Link to="/" className="flex items-center gap-2.5 mb-4">
+              <div className="w-10 h-10 bg-primary-foreground/10 rounded-sm flex items-center justify-center relative overflow-hidden">
+                <span className="font-serif text-lg font-bold text-gold tracking-tight leading-none">NT</span>
+                <div className="absolute bottom-0 left-0 right-0 h-[3px] bg-gold" />
+              </div>
+              <div className="flex flex-col leading-none">
+                <span className="font-serif text-xl font-bold text-primary-foreground tracking-tight">Nıta</span>
+                <span className="text-[10px] font-medium uppercase tracking-[0.25em] text-gold">Textile</span>
+              </div>
+            </Link>
             <p className="text-primary-foreground/70 text-sm leading-relaxed">
               Nıta Tekstil Danışmanlık Ltd. Şti. — Your trusted partner in
               textile consulting, production management, and global market
