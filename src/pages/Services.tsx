@@ -9,6 +9,10 @@ import {
   CheckCircle2,
   Zap,
 } from "lucide-react";
+import serviceProduction from "@/assets/service-production.jpg";
+import serviceDesign from "@/assets/service-design.jpg";
+import serviceExport from "@/assets/service-export.jpg";
+import serviceSampling from "@/assets/service-sampling.jpg";
 
 const services = [
   {
