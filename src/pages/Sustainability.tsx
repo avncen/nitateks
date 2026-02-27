@@ -6,6 +6,7 @@ import {
   Recycle,
   Droplets,
   Sun,
+  Award,
   ArrowRight,
   CheckCircle2,
 } from "lucide-react";
