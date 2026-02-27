@@ -59,7 +59,7 @@ const pillars = [
   {
     icon: Sun,
     image: sustainEthical,
-    title: "Ethical & Transparent Supply Chain",
+    title: "Transparent Supply Chain",
     description:
       "Transparency and fair labor practices are at the core of our sustainability commitment, ensuring dignity across every step.",
     features: [
