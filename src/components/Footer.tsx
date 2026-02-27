@@ -8,14 +8,13 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
           {/* Brand */}
           <div>
-            <Link to="/" className="flex items-center gap-2.5 mb-4">
-              <div className="w-10 h-10 bg-primary-foreground/10 rounded-sm flex items-center justify-center relative overflow-hidden">
-                <span className="font-serif text-lg font-bold text-gold tracking-tight leading-none">NT</span>
-                <div className="absolute bottom-0 left-0 right-0 h-[3px] bg-gold" />
+            <Link to="/" className="flex items-center gap-3 mb-4">
+              <div className="w-9 h-9 border-2 border-gold rounded-full flex items-center justify-center">
+                <span className="font-serif text-sm font-semibold text-gold tracking-tight leading-none">N</span>
               </div>
-              <div className="flex flex-col leading-none">
-                <span className="font-serif text-xl font-bold text-primary-foreground tracking-tight">Nıta</span>
-                <span className="text-[10px] font-medium uppercase tracking-[0.25em] text-gold">Textile</span>
+              <div className="flex items-baseline gap-1.5">
+                <span className="font-serif text-2xl font-semibold text-primary-foreground tracking-wide">Nıta</span>
+                <span className="text-xs font-light uppercase tracking-[0.3em] text-primary-foreground/50">Textile</span>
               </div>
             </Link>
             <p className="text-primary-foreground/70 text-sm leading-relaxed">
