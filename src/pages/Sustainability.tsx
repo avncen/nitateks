@@ -71,6 +71,7 @@ const pillars = [
   },
   {
     icon: Award,
+    image: sustainHigg,
     title: "Higg FEM",
     description:
       "We support and guide our partner factories in completing the Higg Facility Environmental Module (FEM), ensuring transparent measurement and continuous improvement of environmental performance.",
