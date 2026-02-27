@@ -32,6 +32,7 @@ const pillars = [
   },
   {
     icon: Recycle,
+    image: sustainCircular,
     title: "Circular Production",
     description:
       "Our approach to production focuses on waste reduction, recycling, and creating closed-loop systems for textile manufacturing.",
