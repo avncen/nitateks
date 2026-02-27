@@ -6,7 +6,7 @@ const Logo = () => {
       {/* Elegant monogram */}
       <div className="w-9 h-9 border-2 border-gold rounded-full flex items-center justify-center transition-all group-hover:bg-gold/10">
         <span className="font-serif text-sm font-semibold text-gold tracking-tight leading-none">
-          N
+          NT
         </span>
       </div>
       {/* Wordmark */}
