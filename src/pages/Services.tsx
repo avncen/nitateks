@@ -20,6 +20,7 @@ const services = [
     title: "Production & Quality Management",
     description:
       "We oversee every stage of textile production to guarantee quality, efficiency, and compliance with international standards.",
+    image: serviceProduction,
     features: [
       "Factory audits & supplier evaluation",
       "Quality control inspections",
@@ -32,6 +33,7 @@ const services = [
     title: "Fashion & Design Consultancy",
     description:
       "From trend analysis to collection planning, we help brands create compelling textile products that resonate with their target market.",
+    image: serviceDesign,
     features: [
       "Seasonal trend forecasting",
       "Fabric & material selection",
@@ -44,6 +46,7 @@ const services = [
     title: "Export & Marketing",
     description:
       "We connect Turkish textile excellence with global opportunities through strategic market positioning and trade facilitation.",
+    image: serviceExport,
     features: [
       "International market research",
       "Trade fair representation",
@@ -56,6 +59,7 @@ const services = [
     title: "Fast Collection & Sampling Service",
     description:
       "We deliver rapid and reliable collection development and sampling solutions, helping brands accelerate their time-to-market with precision and quality.",
+    image: serviceSampling,
     features: [
       "Quick turnaround sample production",
       "Full collection development support",
