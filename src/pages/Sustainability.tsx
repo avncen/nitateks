@@ -6,6 +6,7 @@ import {
   Recycle,
   Droplets,
   Sun,
+  Award,
   ArrowRight,
   CheckCircle2,
 } from "lucide-react";
@@ -57,6 +58,18 @@ const pillars = [
       "Supply chain traceability",
       "Third-party social audits",
       "Community development programs",
+    ],
+  },
+  {
+    icon: Award,
+    title: "Higg FEM",
+    description:
+      "We support and guide our partner factories in completing the Higg Facility Environmental Module (FEM), ensuring transparent measurement and continuous improvement of environmental performance.",
+    features: [
+      "Higg FEM assessment guidance",
+      "Environmental performance benchmarking",
+      "Continuous improvement action plans",
+      "Verified sustainability reporting",
     ],
   },
 ];
