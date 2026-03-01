@@ -12,35 +12,6 @@ const fadeUp = {
 } as const;
 
 const Contact = () => {
-  const { toast } = useToast();
-  const [form, setForm] = useState({ name: "", email: "", message: "" });
-  const [sending, setSending] = useState(false);
-
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    setSending(true);
-    try {
-      const { data, error } = await supabase.functions.invoke("send-contact-email", {
-        body: { name: form.name, email: form.email, message: form.message },
-      });
-      if (error) throw error;
-      toast({
-        title: "Message Sent",
-        description: "Thank you! We'll get back to you shortly.",
-      });
-      setForm({ name: "", email: "", message: "" });
-    } catch (err) {
-      console.error(err);
-      toast({
-        title: "Error",
-        description: "Failed to send message. Please try again.",
-        variant: "destructive",
-      });
-    } finally {
-      setSending(false);
-    }
-  };
-
   return (
     <Layout>
       {/* Header */}
