@@ -33,8 +33,7 @@ const Contact = () => {
       </section>
 
       <section className="py-24">
-        <div className="container mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-16">
-          {/* Info */}
+        <div className="container mx-auto px-6 max-w-2xl">
           <motion.div
             initial="hidden"
             whileInView="visible"
