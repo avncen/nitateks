@@ -1,9 +1,6 @@
-import { useState } from "react";
 import { motion } from "framer-motion";
 import Layout from "@/components/Layout";
-import { MapPin, Mail, Phone, Send, Loader2 } from "lucide-react";
-import { useToast } from "@/hooks/use-toast";
-import { supabase } from "@/integrations/supabase/client";
+import { MapPin, Mail, Phone } from "lucide-react";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 30 },
@@ -15,35 +12,6 @@ const fadeUp = {
 } as const;
 
 const Contact = () => {
-  const { toast } = useToast();
-  const [form, setForm] = useState({ name: "", email: "", message: "" });
-  const [sending, setSending] = useState(false);
-
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    setSending(true);
-    try {
-      const { data, error } = await supabase.functions.invoke("send-contact-email", {
-        body: { name: form.name, email: form.email, message: form.message },
-      });
-      if (error) throw error;
-      toast({
-        title: "Message Sent",
-        description: "Thank you! We'll get back to you shortly.",
-      });
-      setForm({ name: "", email: "", message: "" });
-    } catch (err) {
-      console.error(err);
-      toast({
-        title: "Error",
-        description: "Failed to send message. Please try again.",
-        variant: "destructive",
-      });
-    } finally {
-      setSending(false);
-    }
-  };
-
   return (
     <Layout>
       {/* Header */}
@@ -65,8 +33,7 @@ const Contact = () => {
       </section>
 
       <section className="py-24">
-        <div className="container mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-16">
-          {/* Info */}
+        <div className="container mx-auto px-6 max-w-2xl">
           <motion.div
             initial="hidden"
             whileInView="visible"
@@ -115,67 +82,6 @@ const Contact = () => {
               ))}
             </div>
           </motion.div>
-
-          {/* Form */}
-          <motion.form
-            onSubmit={handleSubmit}
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-            className="bg-cream rounded-2xl p-8 lg:p-10 space-y-6"
-          >
-            <div>
-              <label className="text-sm font-medium text-navy block mb-2">
-                Full Name
-              </label>
-              <input
-                type="text"
-                required
-                value={form.name}
-                onChange={(e) => setForm({ ...form, name: e.target.value })}
-                className="w-full px-4 py-3 rounded-lg border border-border bg-background text-foreground text-sm focus:outline-none focus:ring-2 focus:ring-gold/50"
-                placeholder="Your name"
-              />
-            </div>
-            <div>
-              <label className="text-sm font-medium text-navy block mb-2">
-                Email
-              </label>
-              <input
-                type="email"
-                required
-                value={form.email}
-                onChange={(e) => setForm({ ...form, email: e.target.value })}
-                className="w-full px-4 py-3 rounded-lg border border-border bg-background text-foreground text-sm focus:outline-none focus:ring-2 focus:ring-gold/50"
-                placeholder="you@example.com"
-              />
-            </div>
-            <div>
-              <label className="text-sm font-medium text-navy block mb-2">
-                Message
-              </label>
-              <textarea
-                required
-                rows={5}
-                value={form.message}
-                onChange={(e) => setForm({ ...form, message: e.target.value })}
-                className="w-full px-4 py-3 rounded-lg border border-border bg-background text-foreground text-sm focus:outline-none focus:ring-2 focus:ring-gold/50 resize-none"
-                placeholder="How can we help you?"
-              />
-            </div>
-            <button
-              type="submit"
-              disabled={sending}
-              className="w-full inline-flex items-center justify-center gap-2 bg-navy text-primary-foreground px-8 py-3 font-medium text-sm uppercase tracking-wider rounded hover:bg-navy-light transition-colors disabled:opacity-50"
-            >
-              {sending ? (
-                <><Loader2 size={16} className="animate-spin" /> Sending...</>
-              ) : (
-                <>Send Message <Send size={16} /></>
-              )}
-            </button>
-          </motion.form>
         </div>
       </section>
     </Layout>
