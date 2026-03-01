@@ -1,9 +1,6 @@
-import { useState } from "react";
 import { motion } from "framer-motion";
 import Layout from "@/components/Layout";
-import { MapPin, Mail, Phone, Send, Loader2 } from "lucide-react";
-import { useToast } from "@/hooks/use-toast";
-import { supabase } from "@/integrations/supabase/client";
+import { MapPin, Mail, Phone } from "lucide-react";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 30 },
