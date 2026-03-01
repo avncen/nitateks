@@ -12,6 +12,7 @@ const fadeUp = {
 } as const;
 
 const Contact = () => {
+
   return (
     <Layout>
       {/* Header */}
