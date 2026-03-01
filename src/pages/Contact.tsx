@@ -82,67 +82,6 @@ const Contact = () => {
               ))}
             </div>
           </motion.div>
-
-          {/* Form */}
-          <motion.form
-            onSubmit={handleSubmit}
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-            className="bg-cream rounded-2xl p-8 lg:p-10 space-y-6"
-          >
-            <div>
-              <label className="text-sm font-medium text-navy block mb-2">
-                Full Name
-              </label>
-              <input
-                type="text"
-                required
-                value={form.name}
-                onChange={(e) => setForm({ ...form, name: e.target.value })}
-                className="w-full px-4 py-3 rounded-lg border border-border bg-background text-foreground text-sm focus:outline-none focus:ring-2 focus:ring-gold/50"
-                placeholder="Your name"
-              />
-            </div>
-            <div>
-              <label className="text-sm font-medium text-navy block mb-2">
-                Email
-              </label>
-              <input
-                type="email"
-                required
-                value={form.email}
-                onChange={(e) => setForm({ ...form, email: e.target.value })}
-                className="w-full px-4 py-3 rounded-lg border border-border bg-background text-foreground text-sm focus:outline-none focus:ring-2 focus:ring-gold/50"
-                placeholder="you@example.com"
-              />
-            </div>
-            <div>
-              <label className="text-sm font-medium text-navy block mb-2">
-                Message
-              </label>
-              <textarea
-                required
-                rows={5}
-                value={form.message}
-                onChange={(e) => setForm({ ...form, message: e.target.value })}
-                className="w-full px-4 py-3 rounded-lg border border-border bg-background text-foreground text-sm focus:outline-none focus:ring-2 focus:ring-gold/50 resize-none"
-                placeholder="How can we help you?"
-              />
-            </div>
-            <button
-              type="submit"
-              disabled={sending}
-              className="w-full inline-flex items-center justify-center gap-2 bg-navy text-primary-foreground px-8 py-3 font-medium text-sm uppercase tracking-wider rounded hover:bg-navy-light transition-colors disabled:opacity-50"
-            >
-              {sending ? (
-                <><Loader2 size={16} className="animate-spin" /> Sending...</>
-              ) : (
-                <>Send Message <Send size={16} /></>
-              )}
-            </button>
-          </motion.form>
         </div>
       </section>
     </Layout>
